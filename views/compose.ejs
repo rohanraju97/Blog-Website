@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-default" style="background-color: #222831">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">PERSONAL JOURNAL</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/user/<%= currentUser %>">HOME</a></li>
+          <li><a href="/logout">LOGOUT</a></li>
+        </ul>
+    </div>
+  </nav>
+</head>
+  <body>
+    <div class="container">
+      <h1>Compose</h1>
+      <form class="" action="/compose" method="post">
+        <div class="form-group">
+          <label>Title</label>
+          <input class="form-control" type="text" name="postTitle" value="<%= heading %>">
+          <label>Post</label>
+
+          <textarea id="textarea" class="form-control" name="postBody" rows="15" cols="30"><%=text%></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
+      </form>
+    </div>
+
+    </body>
+    </html>

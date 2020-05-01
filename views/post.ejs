@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Personal Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-default" style="background-color: #222831">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">PERSONAL JOURNAL</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/edit/<%= heading %>">EDIT</a></li>
+          <li><a href="/delete/<%= heading %>">DELETE</a></li>
+        </ul>
+    </div>
+  </nav>
+</head>
+<body>
+  <div class="container">
+    <h1><%=heading%></h1>
+    <pre><p><%=text%></p></pre>
+  </div>
+
+</body>
+</html>
