@@ -1,6 +1,9 @@
 {
   "name": "final-blog-site",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.6.1"
+  }
   "description": "",
   "main": "app.js",
   "scripts": {
