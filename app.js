@@ -4,7 +4,7 @@ const ejs = require("ejs");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 
 const app = express();
